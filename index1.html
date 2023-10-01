@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dhiraj fitness</title>
+</head>
+<link href='https://fonts.googleapis.com/css?family=Asset' rel='stylesheet'>
+<!-- <link rel="stylesheet" href="style.css"> -->
+<style>
+    /* css reset */
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('gym.jpg');
+        font-family: Asset;
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 31px;
+        top: 11px;
+    }
+
+    .left img {
+        width: 136px;
+        filter: invert(100%);
+        margin-left: 60px;
+        /*invert fun is used to invert black img into white  */
+    }
+
+    .left div {
+        text-align: center;
+        color: white;
+        font-size: 15px;
+        height: 10px;
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+
+        display: inline-block;
+        font-size: 12px;
+
+
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 12px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: rgb(213, 11, 11);
+        text-decoration: underline;
+
+    }
+
+    .mid {
+        display: block;
+        width: 50%;
+        margin: 12px auto;
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 14px;
+        display: inline-block;
+    }
+
+    .btn {
+        margin: 4px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 8px;
+        font-size: 10px;
+        cursor: pointer;
+        font-family: Asset;
+
+    }
+
+    .btn:hover {
+        background-color: blue;
+    }
+    .container{
+     margin: 150px 50px;
+    padding: 80px;
+    color: white;
+    width: 33%;
+}
+.container h1{
+    text-align: center;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.forms div {
+    text-align: center;
+    
+}
+.forms div input{
+    border: 2px solid rgb(203, 18, 18);
+    border-radius: 4px;
+    text-align: center;
+    width: 50%;
+    font-size: 10px;
+    font-family: Asset;
+    height: 30px;
+    
+}
+
+    .container button{
+        height: 30px;
+        display: block;
+        width: 50%;
+        margin:auto;
+    }
+</style>
+
+<body>
+    <header class="class">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="logo.jpg" alt="">
+            <div>DHIRAJ FITNESS</div>
+        </div>
+        <!-- for nav bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">fitness Calculator</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <!-- for other buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+      <h1>Join The Best Gym </h1>
+      <form action="noaction.php" class="forms">
+       <div><input type="text" placeholder="Enter Your Name"></div> 
+       <div><input type="text" placeholder="Enter Your Age"></div> 
+       <div><input type="text" placeholder="Enter Your Gender"></div> 
+       <div><input type="text" placeholder="Enter Your Locality"></div> 
+      </form>
+      <button class="btn">Summit</button>
+    </div>
+</body>
+
+</html>
